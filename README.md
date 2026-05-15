@@ -4,6 +4,8 @@
 
 Bevor eine Freischaltung möglich ist, muss die bereitgestellte **BIN‑Datei (-FULL.bin) auf das passende Gerät geflasht** werden.
 
+Am besten über diese Seite: https://esptool.spacehuhn.com/ und beim flashen ändern auf 0x0000
+
 Nach dem ersten Start zeigt das Display zwei wichtige Informationen an:
 
 - **Chip‑ID** (z. B. `AA:BB:CC:DD:EE:FF`)
