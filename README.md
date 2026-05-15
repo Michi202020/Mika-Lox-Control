@@ -24,13 +24,19 @@ Zur Unterstützung des Projekts ist eine **freiwillige Spende von 20 €** erf
 
 (https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY)
 
+wenn der Link nicht funktioniert kann auch per Geld senden an:
+
 **📧 PayPal: MikaLoxControl@gmail.com**
+
+gespendet werden.
 
 Bitte gib bei der Spende unbedingt die oben genannte Zeichenfolge  
 (**Chip‑ID + Freigabecode im Format `AA:BB:CC:DD:EE:FF 1234`**)  
 im Nachrichtenfeld an.
 
 Nur mit dieser Angabe kann dein persönlicher Freischaltcode generiert und anschließend per E‑Mail bereitgestellt werden.
+
+Dies kann bis zu 12 Minuten dauern!
 
 ---
 
