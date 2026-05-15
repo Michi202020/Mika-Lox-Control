@@ -25,15 +25,7 @@ Bitte achte darauf, dass die Schreibweise exakt übernommen wird.
 
 Die erweiterten Funktionen dieser Software werden durch einen **individuellen Freischaltcode** aktiviert.
 
-Zur Unterstützung des Projekts ist eine **freiwillige Spende von 20 €** erforderlich:
-
-(https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY)
-
-wenn der Link nicht funktioniert kann auch per Geld senden an:
-
-**📧 PayPal: MikaLoxControl@gmail.com**
-
-gespendet werden.
+Zur Unterstützung des Projekts ist eine **freiwillige Spende von 20 €** erforderlich.
 
 Bitte gib bei der Spende unbedingt die oben genannte Zeichenfolge  
 (**Chip‑ID + Freigabecode im Format `AA:BB:CC:DD:EE:FF 1234`**)  
@@ -42,6 +34,13 @@ im Nachrichtenfeld an.
 Nur mit dieser Angabe kann dein persönlicher Freischaltcode generiert und anschließend per E‑Mail bereitgestellt werden.
 
 Dies kann bis zu 3 Stunden dauern!
+
+(https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY)
+
+wenn der Link nicht funktioniert kann auch per Geld senden an:
+
+**📧 PayPal: MikaLoxControl@gmail.com**
+
 
 ---
 
