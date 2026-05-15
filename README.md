@@ -22,9 +22,7 @@ Die erweiterten Funktionen dieser Software werden durch einen **individuellen Fr
 
 Zur Unterstützung des Projekts ist eine **freiwillige Spende von 20 €** erforderlich:
 
-<script 
-  src="https://www.paypal.com/sdk/js?client-id=BAAQ_qvovu2ejRJi3fPbQpMs_jcJenBLpmxopytU4SRrbn-xuEHI2-R0Bu7BCSLxyfFq5sx0CQJgMzbS28&components=hosted-buttons&disable-funding=venmo&currency=EUR">
-</script>
+(https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY)
 
 **📧 PayPal: MikaLoxControl@gmail.com**
 
