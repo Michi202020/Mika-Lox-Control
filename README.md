@@ -41,7 +41,7 @@ im Nachrichtenfeld an.
 
 Nur mit dieser Angabe kann dein persönlicher Freischaltcode generiert und anschließend per E‑Mail bereitgestellt werden.
 
-Dies kann bis zu 12 Minuten dauern!
+Dies kann bis zu 3 Stunden dauern!
 
 ---
 
