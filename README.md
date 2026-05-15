@@ -2,7 +2,7 @@
 
 ## 🔧 Installation & Erststart
 
-Bevor eine Freischaltung möglich ist, muss die bereitgestellte **BIN‑Datei auf das passende Gerät geflasht** werden.
+Bevor eine Freischaltung möglich ist, muss die bereitgestellte **BIN‑Datei (-FULL.bin) auf das passende Gerät geflasht** werden.
 
 Nach dem ersten Start zeigt das Display zwei wichtige Informationen an:
 
