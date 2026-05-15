@@ -6,6 +6,8 @@ Bevor eine Freischaltung möglich ist, muss die bereitgestellte **BIN‑Datei (-
 
 Am besten über diese Seite: https://esptool.spacehuhn.com/ und beim flashen ändern auf 0x0000
 
+<img width="842" height="455" alt="image" src="https://github.com/user-attachments/assets/3418cbc6-8664-482d-b950-97965a0598fc" />
+
 Nach dem ersten Start zeigt das Display zwei wichtige Informationen an:
 
 - **Chip‑ID** (z. B. `AA:BB:CC:DD:EE:FF`)
