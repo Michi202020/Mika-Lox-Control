@@ -6,14 +6,6 @@ Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation b
 
 Bevor eine Freischaltung möglich ist, muss die passende FULL-Binärdatei auf das richtige Gerät geflasht werden.
 
-Verwende dafür am einfachsten diese Seite:
-
-https://esptool.spacehuhn.com/
-
-Wichtig: Die FULL-Datei muss auf die Adresse 0x0000 geflasht werden.
-
-![ESPWebTool Uploadseite](https://github.com/user-attachments/assets/f56b4d3d-19e2-4320-bff9-ff60b8b84607)
-
 ### 1. Die richtige Firmware herunterladen
 
 Lade aus dem Release die zu deinem Gerät passende FULL-Datei herunter:
@@ -38,6 +30,8 @@ Vor dem Start bitte kurz prüfen:
 1. Öffne https://esptool.spacehuhn.com/ in Chrome oder Edge.
 2. Auf der Seite siehst du den Button Connect.
 3. Klicke auf Connect.
+
+![ESPWebTool Uploadseite](https://github.com/user-attachments/assets/f56b4d3d-19e2-4320-bff9-ff60b8b84607)
 
 ### 4. USB-Gerät auswählen
 
@@ -65,15 +59,17 @@ Wenn gar kein Gerät angezeigt wird, prüfe zuerst ein anderes USB-Kabel oder ei
 
 ### 5. FULL-Datei eintragen und Flash-Adresse setzen
 
-Nach erfolgreicher Verbindung fügst du die Firmware-Datei in ESPWebTool ein.
+Nach erfolgreicher Verbindung richtest du die Upload-Seite in ESPWebTool ein.
 
-1. Füge die heruntergeladene FULL-Datei hinzu.
-2. Achte darauf, dass die Flash-Adresse auf 0x0000 steht.
-3. Falls dort ein anderer Wert eingetragen ist, ändere ihn manuell auf 0x0000.
-4. Prüfe noch einmal, dass wirklich die richtige FULL-Datei ausgewählt wurde.
-5. Klicke danach auf Program.
+1. Trage im obersten Adressfeld 0x0000 ein.
+2. Darunter werden oft noch weitere Zeilen angezeigt.
+3. Lösche diese zusätzlichen Zeilen rechts mit dem roten X.
+4. Lösche so lange, bis nur noch die eine oberste Zeile übrig ist und die Seite so aussieht wie auf dem Bild.
+5. Füge in dieser obersten Zeile die heruntergeladene passende FULL-Datei hinzu.
+6. Prüfe noch einmal, dass wirklich die richtige FULL-Datei ausgewählt wurde.
+7. Klicke danach auf Program.
 
-Wichtig: Nicht auf eine andere Adresse flashen. Für die FULL-Datei muss 0x0000 verwendet werden.
+Wichtig: Nicht auf eine andere Adresse flashen. Für die FULL-Datei muss 0x0000 verwendet werden. Die zusätzlichen Zeilen darunter dürfen für diese Anleitung nicht stehen bleiben.
 
 ### 6. Warten bis der Flash-Vorgang fertig ist
 
