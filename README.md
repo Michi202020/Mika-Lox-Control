@@ -8,6 +8,10 @@ Bevor eine Freischaltung möglich ist, muss die passende FULL-Binärdatei auf da
 
 ### 1. Die richtige Firmware herunterladen
 
+Wenn du auf GitHub nicht weißt, wo die Releases liegen, kannst du die Firmware direkt hier herunterladen:
+
+https://github.com/Michi202020/Mika-Lox-Control/releases/
+
 Lade aus dem Release die zu deinem Gerät passende FULL-Datei herunter:
 
 - Mika-Lox-Control-4848S040CIY1-FULL.bin
