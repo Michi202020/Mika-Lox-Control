@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mika Lox Control – Firmware-Installer</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
+<style>
+  :root{
+    --bg:#0f1115;
+    --card:#171a21;
+    --border:#2a2f3a;
+    --text:#e7e9ee;
+    --muted:#9aa2b1;
+    --accent:#4f8cff;
+    --accent-text:#ffffff;
+    --warn-bg:#2a2210;
+    --warn-border:#5c4a12;
+    --warn-text:#e8c766;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8;
+      --card:#ffffff;
+      --border:#e1e4ea;
+      --text:#1b1f27;
+      --muted:#5b6270;
+      --accent:#2f6fed;
+      --accent-text:#ffffff;
+      --warn-bg:#fff8e6;
+      --warn-border:#f0d98c;
+      --warn-text:#7a5c00;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:40px 20px 80px;
+  }
+  h1{
+    font-size:1.6rem;
+    margin-bottom:4px;
+  }
+  .sub{
+    color:var(--muted);
+    margin-top:0;
+    margin-bottom:32px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px 22px;
+    margin-bottom:20px;
+  }
+  .card h2{
+    font-size:1.05rem;
+    margin:0 0 6px;
+  }
+  .card p{
+    color:var(--muted);
+    margin:0 0 16px;
+    font-size:0.95rem;
+  }
+  .device-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .device-card .label b{
+    display:block;
+    font-size:1rem;
+  }
+  .device-card .label span{
+    color:var(--muted);
+    font-size:0.85rem;
+  }
+  esp-web-install-button{
+    --esp-tools-button-color: var(--accent-text);
+    --esp-tools-button-bg-color: var(--accent);
+  }
+  esp-web-install-button button{
+    background:var(--accent);
+    color:var(--accent-text);
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:0.95rem;
+    font-weight:600;
+    cursor:pointer;
+  }
+  ol,ul{
+    color:var(--text);
+    padding-left:20px;
+    margin:0;
+  }
+  li{margin-bottom:6px;}
+  .warn{
+    background:var(--warn-bg);
+    border:1px solid var(--warn-border);
+    color:var(--warn-text);
+    border-radius:10px;
+    padding:14px 16px;
+    font-size:0.9rem;
+    margin-bottom:24px;
+  }
+  .unsupported{
+    display:none;
+  }
+  a{color:var(--accent);}
+  footer{
+    color:var(--muted);
+    font-size:0.85rem;
+    margin-top:32px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Mika Lox Control – Firmware-Installer</h1>
+  <p class="sub">Firmware direkt aus dem Browser auf dein Gerät spielen – ohne zusätzliche Software.</p>
+
+  <div class="warn">
+    Benötigt <b>Chrome, Edge oder Firefox (ab Version 151)</b> auf dem Desktop, eine <b>HTTPS-Verbindung</b>
+    (bereits gegeben) sowie ein <b>echtes USB-Datenkabel</b> (kein reines Ladekabel). Safari, iOS und Chrome/Firefox
+    für Android werden aktuell nicht unterstützt.
+  </div>
+
+  <div class="card">
+    <h2>1. Gerät auswählen und verbinden</h2>
+    <p>Wähle unten dein Gerätemodell, verbinde es per USB und folge den Anweisungen im Popup.</p>
+
+    <div class="device-card" style="margin-bottom:14px;">
+      <div class="label">
+        <b>4848S040CIY1</b>
+        <span>Version 1.0.0</span>
+      </div>
+      <esp-web-install-button manifest="./manifest-ciy1.json">
+        <button slot="activate">Installieren</button>
+        <span slot="unsupported" class="unsupported">Dein Browser unterstützt das leider nicht.</span>
+        <span slot="not-allowed" class="unsupported">Diese Seite muss über HTTPS laufen.</span>
+      </esp-web-install-button>
+    </div>
+
+    <div class="device-card" style="margin-bottom:14px;">
+      <div class="label">
+        <b>4848S040CIY3</b>
+        <span>Version 1.0.0</span>
+      </div>
+      <esp-web-install-button manifest="./manifest-ciy3.json">
+        <button slot="activate">Installieren</button>
+        <span slot="unsupported" class="unsupported">Dein Browser unterstützt das leider nicht.</span>
+        <span slot="not-allowed" class="unsupported">Diese Seite muss über HTTPS laufen.</span>
+      </esp-web-install-button>
+    </div>
+
+    <div class="device-card">
+      <div class="label">
+        <b>Waveshare ESP32-S3-LCD-4 (Rev4)</b>
+        <span>Version 1.0.0</span>
+      </div>
+      <esp-web-install-button manifest="./manifest-waveshare.json">
+        <button slot="activate">Installieren</button>
+        <span slot="unsupported" class="unsupported">Dein Browser unterstützt das leider nicht.</span>
+        <span slot="not-allowed" class="unsupported">Diese Seite muss über HTTPS laufen.</span>
+      </esp-web-install-button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Hinweise zur Verbindung</h2>
+    <ul>
+      <li>Im Geräte-Popup kann dein ESP32 als <i>"USB JTAG/serial debug unit"</i>, <i>"CP210x USB to UART Bridge"</i>,
+        <i>"CH340"</i> oder ähnlich erscheinen – das ist normal, einfach auswählen.</li>
+      <li>Stelle sicher, dass kein anderes Programm (z. B. Arduino IDE, PlatformIO Monitor) gerade auf den
+        USB-Port zugreift.</li>
+      <li>Nach erfolgreichem Flashen startet das Gerät automatisch neu.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. Nach dem Flashen: Aktivierung</h2>
+    <p>
+      Beim ersten Start zeigt das Display eine Chip-ID und einen Freischaltcode an. Wie du daraus deinen
+      persönlichen Aktivierungscode bekommst, steht in der
+      <a href="https://github.com/Michi202020/Mika-Lox-Control#readme" target="_blank" rel="noopener">Repository-README</a>.
+    </p>
+  </div>
+
+  <footer>
+    Mika Lox Control &middot;
+    <a href="https://github.com/Michi202020/Mika-Lox-Control" target="_blank" rel="noopener">GitHub-Repository</a>
+  </footer>
+
+</div>
+</body>
+</html>

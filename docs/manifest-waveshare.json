@@ -1,0 +1,16 @@
+{
+  "name": "Mika Lox Control (Waveshare ESP32-S3-LCD-4 Rev4)",
+  "version": "1.0.0",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "https://github.com/Michi202020/Mika-Lox-Control/releases/latest/download/Mika-Lox-Control-waveshare-s3-lcd40-rev4-FULL.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

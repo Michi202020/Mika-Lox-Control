@@ -1,0 +1,16 @@
+{
+  "name": "Mika Lox Control (4848S040CIY1)",
+  "version": "1.0.0",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "https://github.com/Michi202020/Mika-Lox-Control/releases/download/v1.0.0/Mika-Lox-Control-4848S040CIY1-FULL.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
