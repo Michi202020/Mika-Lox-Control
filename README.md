@@ -1,5 +1,7 @@
 # Mika Lox Control
 
+https://github.com/user-attachments/assets/3e19dfe8-a0e1-4b31-98ce-e44bf2a4b9de
+
 Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation bis zur Freischaltung Schritt für Schritt.
 
 ## Installation und Erststart
