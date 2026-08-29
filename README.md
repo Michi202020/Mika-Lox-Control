@@ -78,9 +78,7 @@ Wichtig:
 
 ## Freischaltung und Spendenhinweis
 
-Die erweiterten Funktionen dieser Software werden über einen individuellen Zugangscode freigeschaltet.
-
-Zur Unterstützung des Projekts ist eine freiwillige Spende von 20 € vorgesehen.
+Ohne einen individuellen Zugangscode ist das Gerät nicht nutzbar. Diesen Code bekommst du gegen eine Spende von 20 € zur Unterstützung des Projekts.
 
 ### So gehst du vor
 
