@@ -1,8 +1,28 @@
 # Mika Lox Control
 
+Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation bis zur Freischaltung Schritt für Schritt.
+
+## Videos
+
+Kurze Videos zu den wichtigsten Themen – einfach das passende auswählen:
+
+### Werbevideo
+
+Ein kurzer Überblick über Mika Lox Control.
+
 https://github.com/user-attachments/assets/3e19dfe8-a0e1-4b31-98ce-e44bf2a4b9de
 
-Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation bis zur Freischaltung Schritt für Schritt.
+### Ersteinrichtung
+
+Zeigt Schritt für Schritt, wie du dein Gerät flashst und aktivierst.
+
+https://github.com/user-attachments/assets/139c6440-075c-48c6-a423-d9febacc7dc2
+
+### Bedienung
+
+Zeigt, wie du Mika Lox Control im Alltag bedienst.
+
+https://github.com/user-attachments/assets/4dc782e3-94d2-4d89-9e53-3214a69f453b
 
 ## Installation und Erststart
 
@@ -130,16 +150,6 @@ Falls die Installer-Seite bei dir aus irgendeinem Grund nicht funktioniert, find
 * `Mika-Lox-Control-4848S040CIY1-FULL.bin`
 * `Mika-Lox-Control-4848S040CIY3-FULL.bin`
 * `Mika-Lox-Control-waveshare-s3-lcd40-rev4-FULL.bin`
-
-
-
-https://github.com/user-attachments/assets/4dc782e3-94d2-4d89-9e53-3214a69f453b
-
-
-
-https://github.com/user-attachments/assets/139c6440-075c-48c6-a423-d9febacc7dc2
-
-
 
 ## Danke
 
