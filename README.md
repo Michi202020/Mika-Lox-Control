@@ -131,6 +131,16 @@ Falls die Installer-Seite bei dir aus irgendeinem Grund nicht funktioniert, find
 * `Mika-Lox-Control-4848S040CIY3-FULL.bin`
 * `Mika-Lox-Control-waveshare-s3-lcd40-rev4-FULL.bin`
 
+
+
+https://github.com/user-attachments/assets/4dc782e3-94d2-4d89-9e53-3214a69f453b
+
+
+
+https://github.com/user-attachments/assets/139c6440-075c-48c6-a423-d9febacc7dc2
+
+
+
 ## Danke
 
 Mit deiner Unterstützung hilfst du, Mika Lox Control weiterzuentwickeln.
