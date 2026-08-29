@@ -4,103 +4,77 @@ Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation b
 
 ## Installation und Erststart
 
-Bevor eine Freischaltung möglich ist, muss die passende FULL-Binärdatei auf das richtige Gerät geflasht werden.
+Bevor eine Freischaltung möglich ist, muss die passende Firmware auf das richtige Gerät geflasht werden. Das geht direkt über die Installer-Seite im Browser – ganz ohne manuellen Datei-Download und ohne Adresseingabe.
 
-### 1. Die richtige Firmware herunterladen
-
-Wenn du auf GitHub nicht weißt, wo die Releases liegen, kannst du die Firmware direkt hier herunterladen:
-
-https://github.com/Michi202020/Mika-Lox-Control/releases/
-
-Lade aus dem Release die zu deinem Gerät passende FULL-Datei herunter:
-
-- Mika-Lox-Control-4848S040CIY1-FULL.bin
-- Mika-Lox-Control-4848S040CIY3-FULL.bin
-
-Nutze nur die Datei, die zu deinem Gerät passt.
-
-### 2. Was du vor dem Flashen brauchst
+### 1. Was du vor dem Flashen brauchst
 
 Vor dem Start bitte kurz prüfen:
 
-- Ein USB-Datenkabel. Ein reines Ladekabel funktioniert nicht.
-- Einen PC oder Laptop mit Google Chrome oder Microsoft Edge.
-- Die passende heruntergeladene FULL-Datei.
-- Das Gerät muss per USB angeschlossen sein.
-- Falls ein anderes Programm schon auf den USB-Port zugreift, dieses vorher schließen.
+* Ein USB-Datenkabel. Ein reines Ladekabel funktioniert nicht.
+* Einen PC oder Laptop mit Google Chrome, Microsoft Edge oder Firefox (ab Version 151).
+* Das Gerät muss per USB angeschlossen sein.
+* Falls ein anderes Programm schon auf den USB-Port zugreift (z. B. Arduino IDE oder ein serieller Monitor), dieses vorher schließen.
 
-### 3. Upload-Seite öffnen
+### 2. Installer-Seite öffnen
 
-1. Öffne https://esptool.spacehuhn.com/ in Chrome oder Edge.
-2. Auf der Seite siehst du den Button Connect.
-3. Klicke auf Connect.
+1. Öffne [michi202020.github.io/Mika-Lox-Control](https://michi202020.github.io/Mika-Lox-Control/) in Chrome, Edge oder Firefox.
+2. Wähle die Karte, die zu deinem Gerät passt:
+   * 4848S040CIY1
+   * 4848S040CIY3
+   * Waveshare ESP32-S3-LCD-4 (Rev4)
+3. Klicke bei deinem Gerät auf **Installieren**.
 
-![ESPWebTool Uploadseite](https://github.com/user-attachments/assets/f56b4d3d-19e2-4320-bff9-ff60b8b84607)
+Die passende Firmware wird automatisch geladen – welche Datei das ist und auf welche Adresse geflasht wird, ist bereits hinterlegt. Du musst dich um nichts davon kümmern.
 
-### 4. USB-Gerät auswählen
+### 3. USB-Gerät auswählen
 
-Nach dem Klick auf Connect öffnet dein Browser ein Fenster zur USB- bzw. seriellen Port-Auswahl.
+Nach dem Klick auf Installieren öffnet dein Browser ein Fenster zur USB- bzw. seriellen Port-Auswahl.
 
-Gehe dabei genau so vor:
-
-1. Suche in der Liste den Eintrag für dein angeschlossenes ESP32-Gerät.
-2. Je nach System kann der Eintrag zum Beispiel so aussehen:
-   - USB JTAG/serial debug unit
-   - CP210x USB to UART Bridge
-   - CH340
-   - Silicon Labs CP210x
-   - USB Serial
-   - unter Linux manchmal ein Eintrag zu ttyUSB oder ttyACM
-3. Wenn mehrere Einträge angezeigt werden und du unsicher bist:
-   - Trenne das Gerät kurz vom USB.
-   - Öffne die Auswahl erneut.
-   - Schließe das Gerät wieder an.
-   - Wähle den neu erschienenen Eintrag.
-4. Markiere den richtigen Eintrag.
-5. Klicke im Browserfenster auf Verbinden oder Connect.
+1. Suche in der Liste den Eintrag für dein angeschlossenes ESP32-Gerät. Je nach System kann der Eintrag zum Beispiel so aussehen:
+   * USB JTAG/serial debug unit
+   * CP210x USB to UART Bridge
+   * CH340
+   * Silicon Labs CP210x
+   * USB Serial
+   * unter Linux manchmal ein Eintrag zu ttyUSB oder ttyACM
+2. Wenn mehrere Einträge angezeigt werden und du unsicher bist:
+   * Trenne das Gerät kurz vom USB.
+   * Öffne die Auswahl erneut.
+   * Schließe das Gerät wieder an.
+   * Wähle den neu erschienenen Eintrag.
+3. Markiere den richtigen Eintrag und klicke auf **Verbinden** bzw. **Connect**.
+4. Bestätige im nächsten Schritt die Installation.
 
 Wenn gar kein Gerät angezeigt wird, prüfe zuerst ein anderes USB-Kabel oder einen anderen USB-Port.
 
-### 5. FULL-Datei eintragen und Flash-Adresse setzen
+### 4. Warten, bis der Flash-Vorgang fertig ist
 
-Nach erfolgreicher Verbindung richtest du die Upload-Seite in ESPWebTool ein.
-
-1. Trage im obersten Adressfeld 0x0000 ein.
-2. Darunter werden oft noch weitere Zeilen angezeigt.
-3. Lösche diese zusätzlichen Zeilen rechts mit dem roten X.
-4. Lösche so lange, bis nur noch die eine oberste Zeile übrig ist und die Seite so aussieht wie auf dem Bild.
-5. Füge in dieser obersten Zeile die heruntergeladene passende FULL-Datei hinzu.
-6. Prüfe noch einmal, dass wirklich die richtige FULL-Datei ausgewählt wurde.
-7. Klicke danach auf Program.
-
-Wichtig: Nicht auf eine andere Adresse flashen. Für die FULL-Datei muss 0x0000 verwendet werden. Die zusätzlichen Zeilen darunter dürfen für diese Anleitung nicht stehen bleiben.
-
-### 6. Warten bis der Flash-Vorgang fertig ist
-
-1. Warte, bis der Upload komplett abgeschlossen ist.
+1. Warte, bis der Vorgang komplett abgeschlossen ist.
 2. Trenne währenddessen nicht das USB-Kabel.
 3. Schließe den Browser nicht.
 4. Nach erfolgreichem Flashen startet das Gerät in der Regel automatisch neu.
 5. Falls kein automatischer Neustart erfolgt, trenne das Gerät kurz vom Strom und schließe es erneut an.
 
-### 7. Anzeige nach dem ersten Start
+### 5. Anzeige nach dem ersten Start
 
 Nach dem ersten Start zeigt das Display zwei wichtige Werte an:
 
-- Chip-ID, zum Beispiel AA:BB:CC:DD:EE:FF
-- Freigabecode, zum Beispiel 1234
+* Chip-ID, zum Beispiel `AA:BB:CC:DD:EE:FF`
+* Freigabecode, zum Beispiel `1234`
 
 Diese beiden Werte musst du exakt so übernehmen, wie sie auf dem Display stehen.
 
 Für die spätere Freischaltung müssen beide Werte in genau diesem Format übermittelt werden:
 
+```
 AA:BB:CC:DD:EE:FF 1234
+```
 
 Wichtig:
 
-- Zwischen Chip-ID und Freigabecode steht genau ein Leerzeichen.
-- Die Doppelpunkte in der Chip-ID müssen erhalten bleiben.
-- Bitte nichts dazuschreiben und nichts weglassen.
+* Zwischen Chip-ID und Freigabecode steht genau ein Leerzeichen.
+* Die Doppelpunkte in der Chip-ID müssen erhalten bleiben.
+* Bitte nichts dazuschreiben und nichts weglassen.
 
 ## Freischaltung und Spendenhinweis
 
@@ -110,21 +84,18 @@ Zur Unterstützung des Projekts ist eine freiwillige Spende von 20 € vorgesehe
 
 ### So gehst du vor
 
-1. Öffne den PayPal-Link:
-
-   https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY
-
+1. Öffne den PayPal-Link: [paypal.com/ncp/payment/VSKA88HTE4ZZY](https://www.paypal.com/ncp/payment/VSKA88HTE4ZZY)
 2. Trage im Nachrichtenfeld unbedingt deine Zeichenfolge in diesem Format ein:
 
+   ```
    AA:BB:CC:DD:EE:FF 1234
+   ```
 
 3. Nur mit dieser Angabe kann dein persönlicher Zugangscode erzeugt werden.
 4. Nach Eingang der Nachricht wird dein Zugangscode per E-Mail geschickt.
 5. Die Zusendung kann bis zu 3 Stunden dauern.
 
-Wenn der PayPal-Link nicht funktioniert, kannst du auch direkt per PayPal an diese Adresse senden:
-
-MikaLoxControl@gmail.com
+Wenn der PayPal-Link nicht funktioniert, kannst du auch direkt per PayPal an diese Adresse senden: [MikaLoxControl@gmail.com](mailto:MikaLoxControl@gmail.com)
 
 Auch dann muss die Zeichenfolge mit Chip-ID und Freigabecode unbedingt in die Nachricht geschrieben werden.
 
@@ -138,23 +109,27 @@ Sobald du deinen persönlichen Zugangscode erhalten hast:
 
 Hinweis: Nach jeder dritten falschen Eingabe wird die Eingabe zeitweise gesperrt. Deshalb den zugesandten Code bitte genau übernehmen.
 
-## Hinweis
-
-Es handelt sich nicht um einen Kaufvertrag.
-
-Die Spende dient der Unterstützung des Projekts. Der persönliche Zugangscode wird als Dankeschön bereitgestellt.
+**Hinweis:** Es handelt sich nicht um einen Kaufvertrag. Die Spende dient der Unterstützung des Projekts. Der persönliche Zugangscode wird als Dankeschön bereitgestellt.
 
 ## Hilfe bei Verbindungsproblemen
 
-Wenn auf der Upload-Seite keine Verbindung möglich ist, prüfe diese Punkte der Reihe nach:
+Wenn auf der Installer-Seite keine Verbindung möglich ist, prüfe diese Punkte der Reihe nach:
 
-1. Nur Chrome oder Edge verwenden.
+1. Nur Chrome, Edge oder Firefox (ab Version 151) verwenden.
 2. Ein anderes USB-Kabel testen.
 3. Einen anderen USB-Port am PC verwenden.
 4. Alle anderen Programme schließen, die den seriellen Port belegen könnten.
 5. Das Gerät kurz abziehen und wieder anschließen.
-6. Die Upload-Seite neu laden und erneut auf Connect klicken.
+6. Die Installer-Seite neu laden und erneut auf Installieren klicken.
 7. Falls nötig den passenden USB-Seriell-Treiber für dein System installieren.
+
+## Alternative: manueller Download
+
+Falls die Installer-Seite bei dir aus irgendeinem Grund nicht funktioniert, findest du die Firmware-Dateien auch direkt in den [GitHub Releases](https://github.com/Michi202020/Mika-Lox-Control/releases/) zum manuellen Flashen mit einem eigenen Tool. Nutze dabei die zu deinem Gerät passende FULL-Datei und flashe sie auf Adresse `0x0000`:
+
+* `Mika-Lox-Control-4848S040CIY1-FULL.bin`
+* `Mika-Lox-Control-4848S040CIY3-FULL.bin`
+* `Mika-Lox-Control-waveshare-s3-lcd40-rev4-FULL.bin`
 
 ## Danke
 
