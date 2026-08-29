@@ -1,6 +1,6 @@
 {
   "name": "Mika Lox Control (Waveshare ESP32-S3-LCD-4 Rev4)",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "new_install_prompt_erase": false,
   "builds": [
     {
