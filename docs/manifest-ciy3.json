@@ -7,7 +7,7 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "https://github.com/Michi202020/Mika-Lox-Control/releases/download/v1.0.0/Mika-Lox-Control-4848S040CIY3-FULL.bin",
+          "path": "./firmware/Mika-Lox-Control-4848S040CIY3-FULL.bin",
           "offset": 0
         }
       ]
