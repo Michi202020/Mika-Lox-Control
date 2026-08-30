@@ -16,7 +16,11 @@ https://github.com/user-attachments/assets/3e19dfe8-a0e1-4b31-98ce-e44bf2a4b9de
 
 Zeigt Schritt für Schritt, wie du dein Gerät flashst und aktivierst.
 
-https://github.com/user-attachments/assets/139c6440-075c-48c6-a423-d9febacc7dc2
+
+
+https://github.com/user-attachments/assets/63472106-8f14-49d5-83aa-8facc78d70aa
+
+
 
 ### Bedienung
 
