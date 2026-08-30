@@ -102,9 +102,13 @@ Wichtig:
 * Die Doppelpunkte in der Chip-ID müssen erhalten bleiben.
 * Bitte nichts dazuschreiben und nichts weglassen.
 
-## Freischaltung und Spendenhinweis
+## Privates Projekt, Unterstützung und Freischaltung
 
-Ohne einen individuellen Zugangscode ist das Gerät nicht nutzbar. Diesen Code bekommst du gegen eine Spende von 20 € zur Unterstützung des Projekts.
+Mika Lox Control ist ein privat entwickeltes DIY-/Hobbyprojekt. Es ist kein offizielles Produkt von Loxone, steht in keiner Verbindung zu Loxone und umfasst keinen offiziellen Loxone-Support. Hinter dem Projekt steht keine als Anbieter auftretende Firma. Die Entwicklung erfolgte über einen Zeitraum von etwa 1,5 Jahren und wird privat fortgeführt.
+
+Du kannst frei entscheiden, ob du das Projekt unterstützen und eine Freischaltung anfordern möchtest. Wichtig: Für die Nutzung des Geräts ist ein individueller Zugangscode erforderlich. Dieser Zugangscode wird nach einer Zahlung von **20 €** bereitgestellt. Ohne diese Zahlung erhältst du keinen Zugangscode und das Gerät bleibt nicht nutzbar. Die Zahlung ist daher Voraussetzung für die Freischaltung und wird hier nicht als bloße „Spende“ bezeichnet.
+
+Diese Beschreibung soll den Ablauf transparent erklären. Sie trifft keine verbindliche Aussage darüber, wie das Projekt oder die Zahlung steuerlich, gewerblich oder rechtlich einzuordnen ist, und ersetzt keine Rechtsberatung.
 
 ### So gehst du vor
 
@@ -116,10 +120,10 @@ Ohne einen individuellen Zugangscode ist das Gerät nicht nutzbar. Diesen Code b
    ```
 
 3. Nur mit dieser Angabe kann dein persönlicher Zugangscode erzeugt werden.
-4. Nach Eingang der Nachricht wird dein Zugangscode per E-Mail geschickt.
+4. Nach Eingang der Zahlung und der erforderlichen Angaben wird dein Zugangscode per E-Mail geschickt.
 5. Die Zusendung kann bis zu 3 Stunden dauern.
 
-Wenn der PayPal-Link nicht funktioniert, kannst du auch direkt per PayPal an diese Adresse senden: [MikaLoxControl@gmail.com](mailto:MikaLoxControl@gmail.com)
+Wenn der PayPal-Link nicht funktioniert, kannst du auch direkt per PayPal an diese Adresse zahlen: [MikaLoxControl@gmail.com](mailto:MikaLoxControl@gmail.com)
 
 Auch dann muss die Zeichenfolge mit Chip-ID und Freigabecode unbedingt in die Nachricht geschrieben werden.
 
@@ -132,8 +136,6 @@ Sobald du deinen persönlichen Zugangscode erhalten hast:
 3. Bei korrekter Eingabe wird das Gerät dauerhaft freigeschaltet.
 
 Hinweis: Nach jeder dritten falschen Eingabe wird die Eingabe zeitweise gesperrt. Deshalb den zugesandten Code bitte genau übernehmen.
-
-**Hinweis:** Es handelt sich nicht um einen Kaufvertrag. Die Spende dient der Unterstützung des Projekts. Der persönliche Zugangscode wird als Dankeschön bereitgestellt.
 
 ## Hilfe bei Verbindungsproblemen
 
