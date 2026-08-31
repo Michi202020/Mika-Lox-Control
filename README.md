@@ -159,8 +159,9 @@ Falls die Installer-Seite bei dir aus irgendeinem Grund nicht funktioniert, find
 
 ## Tutorial Material / Anwendungsvideos
 
-1. https://youtu.be/upHhYXxaVIo
-2. 
+1. Dashboard ändern und Kacheln belegen : https://youtu.be/upHhYXxaVIo
+2. Firmware Update : https://youtu.be/nbM5DjN6LQg
+3. Einstellung Setup Übersicht : https://youtu.be/3EHh_ZeNYxY
 
 
 ## Danke
