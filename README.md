@@ -2,6 +2,9 @@
 
 Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation bis zur Freischaltung Schritt für Schritt.
 
+Aktuell unterstützt das Dashboard diese Loxone-Typen: 
+Switch, Dimmer, LightControllerV2, Jalousie, IRoomController, IRoomControllerV2, EFM, Meter, Pushbutton, Slider, InfoOnlyDigital, InfoOnlyAnalog, InfoOnlyText, TextState und TimedSwitch.
+
 
 ## Installation und Erststart
 
