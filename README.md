@@ -81,7 +81,7 @@ Wichtig:
 
 Mika Lox Control ist ein privat entwickeltes DIY-/Hobbyprojekt. Es ist kein offizielles Produkt von Loxone, steht in keiner Verbindung zu Loxone und umfasst keinen offiziellen Loxone-Support. Hinter dem Projekt steht keine als Anbieter auftretende Firma. Die Entwicklung erfolgte über einen Zeitraum von etwa 1,5 Jahren und wird privat fortgeführt.
 
-Du kannst frei entscheiden, ob du das Projekt unterstützen und eine Freischaltung anfordern möchtest. Wichtig: Für die Nutzung des Geräts ist ein individueller Zugangscode erforderlich. Dieser Zugangscode wird nach einer Zahlung von **20 €** bereitgestellt. Ohne diese Zahlung erhältst du keinen Zugangscode und das Gerät bleibt nicht nutzbar. Die Zahlung ist daher Voraussetzung für die Freischaltung und wird hier nicht als bloße „Spende“ bezeichnet.
+Du kannst frei entscheiden, ob du das Projekt unterstützen und eine Freischaltung anfordern möchtest. Wichtig: Für die Nutzung des Geräts ist ein individueller Zugangscode erforderlich. Dieser Zugangscode wird nach einer Zahlung von **20 €** bereitgestellt. Ohne diese Zahlung erhältst du keinen Zugangscode und das Gerät bleibt im Demo für 3h und anschließend nicht nutzbar. Die Zahlung ist daher Voraussetzung für die Freischaltung und wird hier nicht als bloße „Spende“ bezeichnet.
 
 Diese Beschreibung soll den Ablauf transparent erklären. Sie trifft keine verbindliche Aussage darüber, wie das Projekt oder die Zahlung steuerlich, gewerblich oder rechtlich einzuordnen ist, und ersetzt keine Rechtsberatung.
 
