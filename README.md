@@ -23,8 +23,8 @@ Vor dem Start bitte kurz prüfen:
 
 1. Öffne [michi202020.github.io/Mika-Lox-Control](https://michi202020.github.io/Mika-Lox-Control/) in Chrome, Edge oder Firefox.
 2. Wähle die Karte, die zu deinem Gerät passt:
-   * 4848S040CIY1
-   * 4848S040CIY3
+   * 4848S040CIY1      
+   * 4848S040CIY3      https://de.banggood.com/ESP32-S3-4_0-Inch-480+480-Smart-Display-for-Arduinos-LVGL-WiFi-Bluetooth-Development-Board-86-Box-Central-Control-Panel-LCD-TFT-Module-with-Shell-p-2029063.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=DE&utm_content=minha&utm_campaign=aceng-pmax-deg-de-pc&currency=EUR&cur_warehouse=CN&createTmp=1&ID=6331253&utm_source=googleshopping&utm_medium=cpc_eu&utm_content=dcr&utm_campaign=aceng-pmax-deg-all-help-240411-copy2&ad_id=&gad_source=1&gad_campaignid=21176915915&gclid=EAIaIQobChMIpruekP_ZlgMV6ZWDBx1d0TJqEAQYBSABEgI2yPD_BwE
    * Waveshare ESP32-S3-LCD-4 (Rev4)
 3. Klicke bei deinem Gerät auf **Installieren**.
 
