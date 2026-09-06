@@ -20,12 +20,19 @@ Vor dem Start bitte kurz prüfen:
 * Falls ein anderes Programm schon auf den USB-Port zugreift (z. B. Arduino IDE oder ein serieller Monitor), dieses vorher schließen.
 
 ### 2. Installer-Seite öffnen
-
 1. Öffne [michi202020.github.io/Mika-Lox-Control](https://michi202020.github.io/Mika-Lox-Control/) in Chrome, Edge oder Firefox.
 2. Wähle die Karte, die zu deinem Gerät passt:
-   * 4848S040CIY1        
-   * 4848S040CIY3      [ESP32-S3 4.0" Display bei Banggood](https://de.banggood.com/ESP32-S3-4_0-Inch-480+480-Smart-Display-for-Arduinos-LVGL-WiFi-Bluetooth-Development-Board-86-Box-Central-Control-Panel-LCD-TFT-Module-with-Shell-p-2029063.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=DE&utm_content=minha&utm_campaign=aceng-pmax-deg-de-pc&currency=EUR&cur_warehouse=CN&createTmp=1&ID=6331253&utm_source=googleshopping&utm_medium=cpc_eu&utm_content=dcr&utm_campaign=aceng-pmax-deg-all-help-240411-copy2&ad_id=&gad_source=1&gad_campaignid=21176915915&gclid=EAIaIQobChMIpruekP_ZlgMV6ZWDBx1d0TJqEAQYBSABEgI2yPD_BwE)
-   * Waveshare ESP32-S3-LCD-4 (Rev4)
+   * **4848S040CIY1**
+     * [ESP32-S3 4.0" Display 1 Relay bei Banggood](https://de.banggood.com/ESP32-S3-4_0-Inch-480+480-Smart-Display-for-Arduinos-LVGL-WiFi-Bluetooth-Development-Board-86-Box-Central-Control-Panel-LCD-TFT-Module-with-Shell-p-2029063.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=DE&utm_content=minha&utm_campaign=aceng-pmax-deg-de-pc&currency=EUR&cur_warehouse=CN&createTmp=1&ID=6331252&utm_source=googleshopping&utm_medium=cpc_eu&utm_content=dcr&utm_campaign=aceng-pmax-deg-all-help-240411-copy2&ad_id=&gad_source=1&gad_campaignid=21176915915&gclid=EAIaIQobChMIpruekP_ZlgMV6ZWDBx1d0TJqEAQYBSABEgI2yPD_BwE)
+     * [ESP32-S3 4.0" Display 1 Relay bei AliExpress](https://de.aliexpress.com/item/1005006302251538.html?spm=a2g0o.productlist.main.7.3ca441bdSOKKXB&algo_pvid=fa3ffd10-c424-4bd5-9725-6f93024f26fe&algo_exp_id=fa3ffd10-c424-4bd5-9725-6f93024f26fe-6&pdp_ext_f=%7B%22order%22%3A%22353%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%2135.19%2135.19%21%21%21268.42%21268.42%21%402103810f17886996541465824e0ca8%2112000039682095644%21sea%21DE%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac45fbb68%3Bm03_new_user%3A-29895&curPageLogUid=nZjaxFBhgKI2&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006302251538%7C_p_origin_prod%3A)
+   * **4848S040CIY3**
+     * [ESP32-S3 4.0" Display 3 Relay bei Banggood](https://de.banggood.com/ESP32-S3-4_0-Inch-480+480-Smart-Display-for-Arduinos-LVGL-WiFi-Bluetooth-Development-Board-86-Box-Central-Control-Panel-LCD-TFT-Module-with-Shell-p-2029063.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=DE&utm_content=minha&utm_campaign=aceng-pmax-deg-de-pc&currency=EUR&cur_warehouse=CN&createTmp=1&ID=6331253&utm_source=googleshopping&utm_medium=cpc_eu&utm_content=dcr&utm_campaign=aceng-pmax-deg-all-help-240411-copy2&ad_id=&gad_source=1&gad_campaignid=21176915915&gclid=EAIaIQobChMIpruekP_ZlgMV6ZWDBx1d0TJqEAQYBSABEgI2yPD_BwE)
+     * [ESP32-S3 4.0" Display 3 Relay bei AliExpress](https://de.aliexpress.com/item/1005006302251538.html?spm=a2g0o.productlist.main.7.3ca441bdSOKKXB&algo_pvid=fa3ffd10-c424-4bd5-9725-6f93024f26fe&algo_exp_id=fa3ffd10-c424-4bd5-9725-6f93024f26fe-6&pdp_ext_f=%7B%22order%22%3A%22353%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%2135.19%2135.19%21%21%21268.42%21268.42%21%402103810f17886996541465824e0ca8%2112000039682095644%21sea%21DE%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac45fbb68%3Bm03_new_user%3A-29895&curPageLogUid=nZjaxFBhgKI2&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006302251538%7C_p_origin_prod%3A)
+   * **Waveshare ESP32-S3-LCD-4 (Rev4)**
+     * [Waveshare ESP32-S3-Touch-LCD-4.4 bei Berrybase](https://www.berrybase.de/waveshare-esp32-s3-touch-lcd-4-4-zoll-ips-480x480-touch-display-can-rs485-i2c-terminal-240mhz?srsltid=AfmBOor7hByotyhWKUhorzd5OAxe7_NSpG1u3Lm-1hkpPBeEHI_R_ZQB)
+    
+Bitte genau drauf achten ob die Links zum richtigen Relay geleitet wird. 
+  
 3. Klicke bei deinem Gerät auf **Installieren**.
 
 Die passende Firmware wird automatisch geladen – welche Datei das ist und auf welche Adresse geflasht wird, ist bereits hinterlegt. Du musst dich um nichts davon kümmern.
