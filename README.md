@@ -6,7 +6,7 @@ Aktuell unterstützt das Dashboard diese Loxone-Typen:
 Switch, Dimmer, LightControllerV2, Jalousie, IRoomController, IRoomControllerV2, EFM, Meter, Pushbutton, Slider, InfoOnlyDigital, InfoOnlyAnalog, InfoOnlyText, TextState und TimedSwitch.
 
 
-## Installation und Erststart
+## Installation und Erststart (bitte anschließend immer ein Update machen)
 
 Bevor eine Freischaltung möglich ist, muss die passende Firmware auf das richtige Gerät geflasht werden. Das geht direkt über die Installer-Seite im Browser – ganz ohne manuellen Datei-Download und ohne Adresseingabe.
 
