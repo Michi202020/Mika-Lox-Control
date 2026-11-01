@@ -1,5 +1,17 @@
 # Mika Lox Control mit 3 Tage Demo
 
+<p align="center">
+  <a href="https://michi202020.github.io/Mika-Lox-Control/galerie/">
+    <img src="docs/galerie/galerie-banner.png" alt="Galerie: So sieht MiKa-Lox-Control auf dem Display aus – hier klicken" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://michi202020.github.io/Mika-Lox-Control/galerie/"><b>📸 Zur Bildergalerie – alle 48 Bildschirme in groß ansehen</b></a>
+</p>
+
+---
+
 Diese Anleitung beschreibt den kompletten Ablauf von der Firmware-Installation bis zur Freischaltung Schritt für Schritt.
 
 Aktuell unterstützt das Dashboard diese Loxone-Typen: 

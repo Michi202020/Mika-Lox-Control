@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiKa-Lox-Control Galerie</title>
+<meta name="description" content="Alle Bildschirme von MiKa-Lox-Control – dem lokalen 480×480 Touchdisplay für Loxone. Einrichtung, Dashboard, Loxone-Typen und Einstellungen.">
+<meta property="og:title" content="MiKa-Lox-Control – Galerie">
+<meta property="og:description" content="So sieht das Loxone-Touchdisplay aus: Einrichtung, Dashboard, 15 Loxone-Typen und Einstellungen.">
+<meta property="og:image" content="https://michi202020.github.io/Mika-Lox-Control/galerie/img/dash-6-1.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0c0b">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0c0b; --bg2:#101412; --card:#141916; --line:#232b26;
+  --text:#eef2ef; --muted:#9aa69f; --green:#3fdc1f; --green-d:#2bb10f;
+  --glow:rgba(63,220,31,.18);
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(10,12,11,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1240px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;text-decoration:none;white-space:nowrap}
+.brand img{width:32px;height:32px;border-radius:7px}
+.brand span{color:var(--green)}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:14.5px;color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:999px;white-space:nowrap;transition:.15s}
+.nav a:hover,.nav a.on{color:var(--text);background:#1b221e}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--font);text-decoration:none;padding:11px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer;transition:.15s;white-space:nowrap}
+.btn-g{background:var(--green);color:#051003}
+.btn-g:hover{background:#5bf03a;box-shadow:0 0 0 4px var(--glow)}
+.btn-o{border-color:#2d3831;color:var(--text);background:#121714}
+.btn-o:hover{border-color:var(--green)}
+.top .btn{padding:8px 14px;font-size:14px}
+
+/* Hero */
+.hero{position:relative;max-width:1240px;margin:0 auto;padding:72px 20px 56px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero::before{content:"";position:absolute;inset:-120px -40% auto auto;width:780px;height:780px;background:radial-gradient(circle,rgba(63,220,31,.16),transparent 62%);pointer-events:none;z-index:-1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--green);background:rgba(63,220,31,.08);border:1px solid rgba(63,220,31,.25);padding:6px 12px;border-radius:999px;margin-bottom:22px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
+h1{font-size:clamp(38px,5.4vw,64px);line-height:1.04;margin:0 0 20px;font-weight:800;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:560px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.cta .btn{padding:14px 22px;font-size:16px}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.facts b{display:block;font-size:26px;font-weight:700;line-height:1.1}
+.facts span{font-size:14px;color:var(--muted)}
+
+/* Display-Rahmen */
+.dev{position:relative;background:linear-gradient(155deg,#2a302c,#141816 45%,#0d100e);padding:5.5%;border-radius:9%;box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 0 0 1px #2a322d,0 30px 60px -20px rgba(0,0,0,.8)}
+.dev img{width:100%;height:auto;aspect-ratio:1;border-radius:2.5%;background:#000}
+.dev::after{content:"";position:absolute;inset:5.5%;border-radius:2.5%;background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 40%);pointer-events:none}
+.hero-dev{max-width:480px;justify-self:center;width:100%;cursor:zoom-in;transform:rotate(-2deg);transition:transform .3s}
+.hero-dev:hover{transform:rotate(0) scale(1.01)}
+
+/* Sprungkacheln */
+.jump{max-width:1240px;margin:0 auto 24px;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.jump a{display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:14px 16px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);transition:.15s}
+.jump a:hover{border-color:var(--green);transform:translateY(-2px)}
+.jump b{font-weight:600}
+.jump em{font-style:normal;font-weight:700;font-size:13px;color:var(--green)}
+.jump span{font-size:13.5px;color:var(--muted)}
+
+/* Sektionen */
+section{max-width:1240px;margin:0 auto;padding:56px 20px 8px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+.kick{font-size:14px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+h2{font-size:clamp(28px,3.4vw,40px);margin:0;font-weight:700;letter-spacing:-.015em;line-height:1.1}
+.sh p{color:var(--muted);margin:10px 0 0;max-width:640px}
+.count{font-size:14px;color:var(--muted);white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.grid.big{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;cursor:zoom-in;border-radius:22px;padding:14px 14px 16px;background:var(--bg2);border:1px solid var(--line);transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:rgba(63,220,31,.55);box-shadow:0 18px 40px -18px rgba(63,220,31,.35)}
+.card:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.card .dev{border-radius:8%}
+.card h3{margin:0;font-size:17px;font-weight:600}
+.card p{margin:2px 0 0;font-size:14.5px;color:var(--muted);line-height:1.45}
+.card .meta{padding:0 4px}
+.num{color:var(--green);font-weight:700;margin-right:6px}
+
+/* Abschluss */
+.end{max-width:1240px;margin:72px auto 0;padding:0 20px}
+.end-in{border-radius:28px;padding:48px 36px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(63,220,31,.18),transparent 60%),var(--bg2);border:1px solid var(--line)}
+.end h2{margin-bottom:12px}
+.end p{color:var(--muted);margin:0 auto 26px;max-width:560px}
+.end .cta{justify-content:center}
+footer{max-width:1240px;margin:0 auto;padding:40px 20px 50px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(4,6,5,.985);display:none;flex-direction:column}
+.lb.open{display:flex}
+.lb-top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;gap:12px}
+.lb-sec{font-size:14px;color:var(--green);font-weight:600}
+.lb-cnt{font-size:14px;color:var(--muted)}
+.lb-x{all:unset;cursor:pointer;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#161c18;border:1px solid var(--line)}
+.lb-x:hover{border-color:var(--green)}
+.lb-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:18px;padding:0 14px;position:relative}
+.lb-dev{flex:none;width:min(calc(100vw - 170px),calc(100dvh - 250px),1100px);padding:3%;border-radius:6%}
+.lb-dev img{border-radius:1.6%}
+.lb-dev::after{inset:3%;border-radius:1.6%}
+.lb-nav{all:unset;cursor:pointer;flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#161c18;border:1px solid var(--line);transition:.15s}
+.lb-nav:hover{border-color:var(--green);background:#1b241e}
+.lb-cap{text-align:center;padding:16px 20px 22px}
+.lb-cap h3{margin:0;font-size:22px;font-weight:600}
+.lb-cap p{margin:4px auto 0;color:var(--muted);max-width:640px}
+.lb-strip{display:flex;gap:8px;overflow-x:auto;padding:0 18px 18px;scrollbar-width:thin;justify-content:safe center}
+.lb-strip button{all:unset;cursor:pointer;flex:none;width:58px;height:58px;border-radius:8px;overflow:hidden;opacity:.45;border:2px solid transparent;transition:.15s}
+.lb-strip button.on{opacity:1;border-color:var(--green)}
+.lb-strip button:hover{opacity:1}
+.lb-strip img{width:100%;height:100%;object-fit:cover}
+.hint{font-size:13px;color:#6e7a73;margin-top:8px}
+.ht{display:none}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:44px;gap:40px}
+  .hero-dev{max-width:420px;transform:none}
+  .top .btn{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top-in{padding:10px 16px;gap:12px}
+  .brand b{display:none}
+  .hero,section,.jump,.end,footer{padding-left:16px;padding-right:16px}
+  .grid,.grid.big{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .card{padding:8px 8px 12px;border-radius:16px;gap:10px}
+  .card h3{font-size:15px}
+  .card p{display:none}
+  .facts{gap:20px}
+  .lb-nav{display:none}
+  .hk{display:none}.ht{display:inline}
+  .lb-dev{width:min(calc(100vw - 20px),calc(100dvh - 260px))}
+  .lb-stage{padding:0 10px}
+  .lb-strip button{width:48px;height:48px}
+  .end-in{padding:36px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#"><img src="img/logo.png" alt=""><b>MiKa-Lox-<span>Control</span></b></a>
+    <nav class="nav" id="nav"></nav>
+    <a class="btn btn-g" href="../">Jetzt installieren</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="eyebrow"><i></i>Galerie · alle Bildschirme</div>
+    <h1>Dein Loxone-Zuhause auf einem <em>Touchdisplay</em>.</h1>
+    <p class="lead">MiKa-Lox-Control macht aus einem 4-Zoll-ESP32-Display ein lokales Bedienpanel für Loxone. Schau dir hier jeden Bildschirm in voller Größe an – von der Einrichtung bis zu den Einstellungen.</p>
+    <div class="cta">
+      <a class="btn btn-g" href="#einrichtung">Bilder ansehen ↓</a>
+      <a class="btn btn-o" href="../">Installieren &amp; 3 Tage testen</a>
+    </div>
+    <div class="facts">
+      <div><b>480×480</b><span>Touchdisplay</span></div>
+      <div><b>15</b><span>Loxone-Typen</span></div>
+      <div><b>0 PC</b><span>Einrichtung am Gerät</span></div>
+      <div><b>48</b><span>Bildschirme</span></div>
+    </div>
+  </div>
+  <div class="dev hero-dev" id="heroDev" role="button" tabindex="0" aria-label="Dashboard groß ansehen"><img src="img/dash-6-1.png" alt="Dashboard mit 6 Kacheln" width="960" height="960"></div>
+</div>
+
+<div class="jump" id="jump"></div>
+
+<main id="main"></main>
+
+<div class="end">
+  <div class="end-in">
+    <h2>Gefällt dir, was du siehst?</h2>
+    <p>Flashe die Firmware direkt im Browser und teste MiKa-Lox-Control 3 Tage kostenlos auf deinem eigenen Display.</p>
+    <div class="cta">
+      <a class="btn btn-g" href="../">Zum Installer</a>
+      <a class="btn btn-o" href="https://github.com/Michi202020/Mika-Lox-Control#readme">Anleitung auf GitHub</a>
+          </div>
+  </div>
+</div>
+
+<footer>
+  <span>MiKa-Lox-Control · privates DIY-Projekt, keine Verbindung zur Loxone Electronics GmbH.</span>
+  <span>Alle Bilder sind echte Renders der Firmware-Oberfläche mit Beispieldaten · <a href="mailto:Mikaloxcontrol@gmail.com">Mikaloxcontrol@gmail.com</a></span>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Bildansicht">
+  <div class="lb-top">
+    <div><div class="lb-sec" id="lbSec"></div><div class="lb-cnt" id="lbCnt"></div></div>
+    <button class="lb-x" id="lbX" aria-label="Schließen"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="lb-stage" id="lbStage">
+    <button class="lb-nav" id="lbP" aria-label="Vorheriges Bild"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="dev lb-dev"><img id="lbImg" alt=""></div>
+    <button class="lb-nav" id="lbN" aria-label="Nächstes Bild"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="lb-cap"><h3 id="lbT"></h3><p id="lbD"></p><div class="hint"><span class="hk">← → blättern · Esc schließen</span><span class="ht">Wischen zum Blättern</span></div></div>
+  <div class="lb-strip" id="lbStrip"></div>
+</div>
+
+<script>
+const SECTIONS = [{"id": "einrichtung", "title": "Ersteinrichtung", "kicker": "Ohne PC", "intro": "Vom ersten Einschalten bis zum fertigen Gerät – komplett am Display, ohne PC. WLAN wählen, Miniserver wird automatisch gefunden, Daten und Icons werden geladen.", "items": [{"id": "setup-01", "title": "Startbildschirm", "desc": "Das Boot-Logo beim Einschalten."}, {"id": "setup-02", "title": "WLAN auswählen", "desc": "Das Display sucht verfügbare Netzwerke – einfach auswählen."}, {"id": "setup-03", "title": "WLAN-Passwort", "desc": "Passwort direkt am Touchscreen eingeben."}, {"id": "setup-04", "title": "Verbinden", "desc": "Verbindung zum WLAN wird aufgebaut."}, {"id": "setup-05", "title": "Miniserver-Suche", "desc": "Der Loxone Miniserver wird automatisch im lokalen Netz gefunden."}, {"id": "setup-06", "title": "Miniserver-Konfiguration", "desc": "IP und Port sind schon vorausgefüllt – nur noch Benutzer und Passwort."}, {"id": "setup-07", "title": "Anmeldung", "desc": "Authentifizierung am Miniserver."}, {"id": "setup-08", "title": "Struktur laden", "desc": "Räume und Controls werden vom Miniserver geladen."}, {"id": "setup-09", "title": "Icons laden", "desc": "Die passenden Loxone-Icons werden entpackt."}, {"id": "setup-10", "title": "Fertig", "desc": "Ersteinrichtung abgeschlossen – das Gerät startet neu."}]}, {"id": "dashboard-einrichten", "title": "Dashboard einrichten", "kicker": "In wenigen Taps", "intro": "Wähle 1, 4 oder 6 Kacheln und belege jede Kachel mit einem Raum und einem Loxone-Control.", "items": [{"id": "kacheln-01", "title": "Kachelanzahl wählen", "desc": "Vollbild, 2×2 oder 3×2 Raster."}, {"id": "kacheln-02", "title": "Leeres Dashboard", "desc": "Auf ein Plus tippen, um eine Kachel zu belegen."}, {"id": "kacheln-03", "title": "Raum wählen", "desc": "Die Räume kommen direkt aus deinem Miniserver."}, {"id": "kacheln-04", "title": "Control wählen", "desc": "Alle Controls im gewählten Raum."}, {"id": "kacheln-05", "title": "Auswahl übernehmen", "desc": "Control markieren und übernehmen."}, {"id": "kacheln-06", "title": "Gespeichert", "desc": "Konfiguration gespeichert – fertig."}]}, {"id": "dashboard", "title": "Dashboard im Alltag", "kicker": "1, 4 oder 6 Kacheln", "intro": "So sieht das Display im Alltag aus: große Touch-Kacheln mit Live-Werten aus deinem Loxone-System – wahlweise als Vollbild, 2×2 oder 3×2 Raster.", "items": [{"id": "dash-6-1", "title": "6 Kacheln – Seite 1", "desc": "Steckdose, Dimmer, Lichtsteuerung, Jalousie und zwei Raumregler."}, {"id": "dash-6-2", "title": "6 Kacheln – Seite 2", "desc": "Stromzähler, Taster, Lüfterstufe, Fensterstatus, Außenfühler, Wettertext."}, {"id": "dash-4-1", "title": "4 Kacheln – Seite 1", "desc": "Steckdose, Dimmer, Lichtsteuerung und Jalousie im 2×2 Raster."}, {"id": "dash-4-2", "title": "4 Kacheln – Seite 2", "desc": "Zwei Raumregler, Stromzähler und Taster."}, {"id": "dash-4-3", "title": "4 Kacheln – Seite 3", "desc": "Lüfterstufe, Fensterstatus, Außenfühler und Wettertext."}, {"id": "typ-energiefluss", "title": "1 Kachel – Energiefluss", "desc": "PV, Haus, Netz, Speicher, Wallbox und Unterverteilung auf einen Blick."}, {"id": "typ-raumregler-v2", "title": "1 Kachel – Raumregler", "desc": "Intelligente Raumregelung mit Modus und Sollwert."}, {"id": "typ-meter", "title": "1 Kachel – Stromzähler", "desc": "Leistung und Verbrauch für Tag, Woche und Monat."}]}, {"id": "details", "title": "Detailansichten", "kicker": "Ein Tipp auf das Icon", "intro": "Bei vielen Typen öffnet ein Tipp auf das Icon eine Detailansicht mit weiteren Funktionen.", "items": [{"id": "detail-stimmung", "title": "Stimmungen", "desc": "Lichtstimmung direkt auswählen."}, {"id": "detail-slider", "title": "Slider-Detail", "desc": "Großer Schieberegler zum Einstellen."}, {"id": "detail-raumregler-v1", "title": "Raumregler V1", "desc": "Temperatur und Betriebsmodus anpassen."}, {"id": "detail-raumregler-v2", "title": "Raumregler V2", "desc": "Modus, Timer und fixer Sollwert."}, {"id": "detail-treppenlicht", "title": "Treppenlicht", "desc": "Restzeit und Status."}, {"id": "detail-energiefluss", "title": "Energiefluss-Gruppe", "desc": "Unterverteilung mit allen Verbrauchern."}]}, {"id": "einstellungen", "title": "Einstellungen", "kicker": "Alles am Display", "intro": "Anzeige, Kachel-Layout, Relais, Systeminfo und Firmware-Update – alles direkt am Touchscreen.", "items": [{"id": "set-01", "title": "Einstellungen", "desc": "Das Hauptmenü."}, {"id": "set-02", "title": "Einstellungen (Mitte)", "desc": "Dashboard, System-Info, Neustart."}, {"id": "set-03", "title": "Einstellungen (Ende)", "desc": "WLAN, Firmware-Update und Werkseinstellungen."}, {"id": "set-04", "title": "Display-Einstellungen", "desc": "Dimmen nach Zeit, Dim-Level und Display-Drehung."}, {"id": "set-05", "title": "Kachel-Layout", "desc": "Vorschau einer Kachel zum Anpassen."}, {"id": "set-06", "title": "Kachel-Layout anpassen", "desc": "Elemente ein-/ausblenden und verschieben."}, {"id": "set-07", "title": "Kachel-Layout: Kategorie", "desc": "Wahlweise Kategorie oder Raum anzeigen."}, {"id": "set-08", "title": "Relais-Steuerung", "desc": "Die eingebauten Relais einem Loxone-Control zuweisen."}, {"id": "set-09", "title": "Relais: Raum wählen", "desc": "Raum für das Relais auswählen."}, {"id": "set-10", "title": "Relais: Control wählen", "desc": "Passendes Control auswählen."}, {"id": "set-11", "title": "Relais: Jalousie-Richtung", "desc": "Bei Jalousien die Richtung festlegen."}, {"id": "set-12", "title": "Kacheln leeren", "desc": "Alle oder einzelne Kacheln leeren."}, {"id": "set-13", "title": "Kachel auswählen", "desc": "Welche Kachel geleert werden soll."}, {"id": "set-14", "title": "Dashboard neu aufbauen", "desc": "Sicherheitsabfrage vor dem Zurücksetzen."}, {"id": "set-15", "title": "Firmware-Update", "desc": "Update direkt am Gerät starten."}, {"id": "set-16", "title": "System-Info", "desc": "Speicher, WLAN und Laufzeit."}, {"id": "set-17", "title": "Werkseinstellungen", "desc": "Zurücksetzen läuft."}]}, {"id": "freischaltung", "title": "Freischaltung", "kicker": "Nach der 3-Tage-Demo", "intro": "Nach der Demo zeigt das Display Chip-ID und Freigabecode. Mit deinem Zugangscode schaltest du es dauerhaft frei.", "items": [{"id": "freischaltung", "title": "Zugangscode eingeben", "desc": "Chip-ID und Freigabecode für die Bestellung, darunter das Feld für den 6-stelligen Zugangscode."}]}];
+const order = ["einrichtung","dashboard-einrichten","dashboard","details","einstellungen","freischaltung"];
+SECTIONS.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
+
+const all = [];
+const main = document.getElementById("main"), nav = document.getElementById("nav"), jump = document.getElementById("jump");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+SECTIONS.forEach((sec, si) => {
+  const sEl = document.createElement("section");
+  sEl.id = sec.id;
+  const big = sec.items.length <= 7 && sec.id !== "details";
+  sEl.innerHTML = `<div class="sh"><div><div class="kick">Schritt ${si+1} · ${esc(sec.kicker)}</div><h2>${esc(sec.title)}</h2><p>${esc(sec.intro)}</p></div><div class="count">${sec.items.length} ${sec.items.length===1?"Bild":"Bilder"}</div></div><div class="grid${big?" big":""}"></div>`;
+  const grid = sEl.querySelector(".grid");
+  const numbered = sec.id === "einrichtung" || sec.id === "dashboard-einrichten";
+  sec.items.forEach((it, i) => {
+    const idx = all.length;
+    all.push({...it, sec: sec.title});
+    const b = document.createElement("button");
+    b.className = "card";
+    b.setAttribute("aria-label", it.title + " groß ansehen");
+    b.innerHTML = `<div class="dev"><img src="img/${it.id}.png" alt="${esc(it.title)}" loading="lazy" width="960" height="960"></div><div class="meta"><h3>${numbered?`<span class="num">${i+1}</span>`:""}${esc(it.title)}</h3><p>${esc(it.desc)}</p></div>`;
+    b.onclick = () => openLb(idx);
+    grid.appendChild(b);
+  });
+  main.appendChild(sEl);
+  nav.insertAdjacentHTML("beforeend", `<a href="#${sec.id}" data-s="${sec.id}">${esc(sec.title)}</a>`);
+  jump.insertAdjacentHTML("beforeend", `<a href="#${sec.id}"><em>${si+1}</em><b>${esc(sec.title)}</b><span>${sec.items.length} ${sec.items.length===1?"Bild":"Bilder"}</span></a>`);
+});
+
+/* aktiver Menüpunkt */
+const navLinks = [...nav.querySelectorAll("a")];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.dataset.s === e.target.id));
+}), {rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("main section").forEach(s => io.observe(s));
+
+/* Lightbox */
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), strip = document.getElementById("lbStrip");
+let cur = 0, lastFocus = null;
+all.forEach((it, i) => {
+  const t = document.createElement("button");
+  t.innerHTML = `<img src="img/${it.id}.png" alt="" loading="lazy">`;
+  t.setAttribute("aria-label", it.title);
+  t.onclick = () => show(i);
+  strip.appendChild(t);
+});
+function show(i){
+  cur = (i + all.length) % all.length;
+  const it = all[cur];
+  lbImg.src = `img/${it.id}.png`; lbImg.alt = it.title;
+  document.getElementById("lbT").textContent = it.title;
+  document.getElementById("lbD").textContent = it.desc;
+  document.getElementById("lbSec").textContent = it.sec;
+  document.getElementById("lbCnt").textContent = `${cur+1} / ${all.length}`;
+  [...strip.children].forEach((c,k)=>c.classList.toggle("on", k===cur));
+  strip.children[cur].scrollIntoView({block:"nearest",inline:"center",behavior:"smooth"});
+  history.replaceState(null, "", "#bild=" + it.id);
+  [cur+1, cur-1].forEach(k => { const p = all[(k+all.length)%all.length]; new Image().src = `img/${p.id}.png`; });
+}
+function openLb(i){ lastFocus = document.activeElement; lb.classList.add("open"); document.body.style.overflow="hidden"; show(i); document.getElementById("lbX").focus(); }
+function closeLb(){ lb.classList.remove("open"); document.body.style.overflow=""; history.replaceState(null,"",location.pathname); if(lastFocus) lastFocus.focus(); }
+document.getElementById("lbX").onclick = closeLb;
+document.getElementById("lbP").onclick = () => show(cur-1);
+document.getElementById("lbN").onclick = () => show(cur+1);
+document.getElementById("lbStage").addEventListener("click", e => { if (e.target.id === "lbStage") closeLb(); });
+document.addEventListener("keydown", e => {
+  if (!lb.classList.contains("open")) return;
+  if (e.key === "Escape") closeLb();
+  else if (e.key === "ArrowRight") show(cur+1);
+  else if (e.key === "ArrowLeft") show(cur-1);
+});
+let sx = null, sy = null;
+lb.addEventListener("touchstart", e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, {passive:true});
+lb.addEventListener("touchend", e => {
+  if (sx === null) return;
+  const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+  if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(cur + (dx < 0 ? 1 : -1));
+  sx = null;
+});
+const hero = document.getElementById("heroDev");
+const heroOpen = () => openLb(all.findIndex(x => x.id === "dash-6-1"));
+hero.onclick = heroOpen;
+hero.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); heroOpen(); } };
+
+/* Direktlink #bild=... */
+const m = location.hash.match(/^#bild=(.+)$/);
+if (m) { const i = all.findIndex(x => x.id === m[1]); if (i >= 0) openLb(i); }
+</script>
+</body>
+</html>
